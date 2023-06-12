@@ -9,11 +9,7 @@ export const useFetch = () => {
     let response;
     let json;
     try {
-      response = await fetch(url, {
-        headers: {
-          Authorization: `Token ${token}`,
-        },
-      });
+      response = await fetch(url);
       json = await response.json();
       setData(json);
     } catch {}
