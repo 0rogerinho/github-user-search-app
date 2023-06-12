@@ -1,5 +1,7 @@
 import React from 'react';
-import { MapPin, Link, TwitterLogo, Buildings } from '@phosphor-icons/react';
+import { BiMap } from 'react-icons/bi';
+import { BsLink45Deg, BsBuildings } from 'react-icons/bs';
+import { FiTwitter } from 'react-icons/fi';
 import { user } from './Context/UserData';
 
 const Perfil = ({ srcImg, name, lastActive, link }) => {
@@ -66,7 +68,7 @@ const UserProfile = () => {
           </div>
           <ul className="w-[11.5625rem] md:w-[30.8125rem] text-[.8125rem] md:text-[1rem] flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-5">
             <li>
-              <MapPin
+              <BiMap
                 size={22}
                 weight="bold"
                 className="inline mr-[.625rem] md:mr-[1rem]"
@@ -76,12 +78,16 @@ const UserProfile = () => {
               </a>
             </li>
             <li>
-              <Link size={22} weight="bold" className="inline mr-[10px]" />
+              <BsLink45Deg
+                size={22}
+                weight="bold"
+                className="inline mr-[10px]"
+              />
               <a href={data.html_url}>{data.html_url}</a>
             </li>
 
             <li>
-              <TwitterLogo
+              <FiTwitter
                 size={22}
                 weight="bold"
                 className="inline mr-[10px] md:mr-[1rem] transition-opacity"
@@ -93,7 +99,7 @@ const UserProfile = () => {
               </a>
             </li>
             <li>
-              <Buildings
+              <BsBuildings
                 size={22}
                 weight="bold"
                 className="inline mr-[10px] md:mr-[1rem] transition-opacity"
