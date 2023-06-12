@@ -1,4 +1,4 @@
-import Header from './components/header';
+import Header from './components/Header';
 import SearchBar from './components/SearchBar';
 import UserProfile from './components/UserProfile';
 import ThemeProvider from './components/Context/ThemeProvider';
