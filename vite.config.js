@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['@phosphor-icons/react'],
+      external: ['./@phosphor-icons/react'],
     },
   },
 });
