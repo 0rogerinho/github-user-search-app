@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useTheme } from './Context/hooks/theme';
 const Header = () => {
   const { colorMode, toggleTheme } = useTheme();
