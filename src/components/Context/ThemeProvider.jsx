@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import { useState, createContext, useContext } from 'react';
 export const theme = createContext();
 const ThemeProvider = ({ children }) => {
   const [colorMode, setColorMode] = useState('light');
@@ -13,3 +13,5 @@ const ThemeProvider = ({ children }) => {
 };
 
 export default ThemeProvider;
+
+export const useTheme = () => useContext(theme);

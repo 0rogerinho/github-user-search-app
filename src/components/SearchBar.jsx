@@ -7,7 +7,7 @@ const SearchBar = () => {
   const [searchName, setSearchName] = React.useState('');
 
   const { request } = useFetch();
-  const { data } = React.useContext(user);
+  const { data, error } = React.useContext(user);
 
   function handleChangeValue(event) {
     event.preventDefault();

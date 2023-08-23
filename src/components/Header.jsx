@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTheme } from './Context/hooks/theme';
+import { useTheme } from './Context/ThemeProvider';
+
 const Header = () => {
   const { colorMode, toggleTheme } = useTheme();
   return (
