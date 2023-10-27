@@ -73,7 +73,7 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[.625rem] md:mr-[1rem]"
               />
-              <a href={data.location === null ? '#' : data.location}>
+              <a href={data.location} target="_blank">
                 {data.location === null ? 'Not Available' : data.location}
               </a>
             </li>
@@ -83,7 +83,7 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[10px]"
               />
-              <a href={data.html_url}>{data.html_url}</a>
+              <a href={data.html_url} target="_blank">{data.html_url}</a>
             </li>
 
             <li>
@@ -92,7 +92,7 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[10px] md:mr-[1rem] transition-opacity"
               />
-              <a href="">
+              <a href={data.twitter_username} target="_blank">
                 {data.twitter_username === null
                   ? 'Not Available'
                   : data.twitter_username}
@@ -104,7 +104,7 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[10px] md:mr-[1rem] transition-opacity"
               />
-              <a href="">
+              <a href={data.company } target="_blank">
                 {data.company === null ? 'Not Available' : data.company}
               </a>
             </li>
