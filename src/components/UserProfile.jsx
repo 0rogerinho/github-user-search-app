@@ -73,7 +73,8 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[.625rem] md:mr-[1rem]"
               />
-                {data.location === null ? 'Not Available' : data.location}
+              <a href={`https://www.google.com.br/maps/place/${data.location}`} target="_blank">{data.location === null ? 'Not Available' : data.location}</a>
+                
     
             </li>
             <li>
