@@ -73,9 +73,8 @@ const UserProfile = () => {
                 weight="bold"
                 className="inline mr-[.625rem] md:mr-[1rem]"
               />
-              <a href={data.location} target="_blank">
                 {data.location === null ? 'Not Available' : data.location}
-              </a>
+    
             </li>
             <li>
               <BsLink45Deg
