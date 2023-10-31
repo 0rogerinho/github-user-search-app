@@ -1,6 +1,6 @@
-import { useTheme } from './Context/ThemeProvider';
+import { useTheme } from '../../Context/ThemeProvider';
 
-const Header = () => {
+export const Header = () => {
   const { colorMode, toggleTheme } = useTheme();
   return (
     <div className="flex justify-center text-text-[#000000] dark:text-[#ffffff]">
@@ -22,5 +22,3 @@ const Header = () => {
     </div>
   );
 };
-
-export default Header;

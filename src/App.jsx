@@ -1,14 +1,13 @@
-import Header from './components/Header';
-import SearchBar from './components/SearchBar';
-import UserProfile from './components/UserProfile';
-import UserData from './components/Context/UserData';
+import Page from '../page/Page';
+import { DataProvider, ThemeProvider } from './Context';
+
 function App() {
   return (
-    <UserData>
-      <Header />
-      <SearchBar />
-      <UserProfile />
-    </UserData>
+    <DataProvider>
+      <ThemeProvider>
+        <Page />
+      </ThemeProvider>
+    </DataProvider>
   );
 }
 
