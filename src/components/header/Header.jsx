@@ -9,7 +9,7 @@ export const Header = () => {
           DevFinder
         </h1>
         <div className="flex items-center gap-4">
-          <p className="text-[.8125rem] tracking-[.1437rem] text-[#4B6A9B] dark:text-[#ffffff] uppercase ">
+          <p className="text-base font-bold tracking-[.1437rem] text-[#4B6A9B] dark:text-[#ffffff] uppercase ">
             {colorMode === 'dark' ? 'light' : 'dark'}
           </p>
           <img

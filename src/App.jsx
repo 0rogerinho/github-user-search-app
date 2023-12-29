@@ -1,4 +1,4 @@
-import Page from '../page/Page';
+import Page from './page/Page';
 import { DataProvider, ThemeProvider } from './Context';
 
 function App() {

@@ -10,6 +10,17 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     setColorMode(colorMode === 'light' ? 'dark' : 'light');
   };
+  React.useEffect(() => {
+    const prefersColorScheme = window.matchMedia(
+      '(prefers-color-scheme: dark)',
+    );
+    console.log(prefersColorScheme.matches);
+    if (prefersColorScheme.matches) {
+      setColorMode('dark');
+    } else {
+      setColorMode('light');
+    }
+  }, []);
   return (
     <ThemeContext.Provider value={{ colorMode, toggleTheme }}>
       {children}

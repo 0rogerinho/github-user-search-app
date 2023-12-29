@@ -1,5 +1,5 @@
-import Theme from '../src/theme/theme';
-import { Header, SearchBar, UserProfile } from '../src/components';
+import Theme from '../theme/theme';
+import { Header, SearchBar, UserProfile } from '../components';
 
 const Page = () => {
   return (

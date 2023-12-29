@@ -6,8 +6,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s;
 }
 body{
   font-family:  'Space Mono';
   background: #EDF1FF ;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
 }
