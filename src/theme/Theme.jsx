@@ -1,6 +1,6 @@
 import { useTheme } from '../Context/ThemeProvider';
 
-const Theme = ({ children }) => {
+export const Theme = ({ children }) => {
   const { colorMode } = useTheme();
   return (
     <div className={`${colorMode}`}>
@@ -8,5 +8,3 @@ const Theme = ({ children }) => {
     </div>
   );
 };
-
-export default Theme;
