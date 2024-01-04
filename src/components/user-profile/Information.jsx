@@ -13,7 +13,7 @@ export const Information = ({ srcImg, name, lastActive, href, text }) => {
           @{text}
         </a>
         <p>
-          Joined
+          Joined{' '}
           {lastActive &&
             new Intl.DateTimeFormat('en-US', {
               day: '2-digit',
