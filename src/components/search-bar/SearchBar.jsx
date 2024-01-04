@@ -9,7 +9,6 @@ export const SearchBar = () => {
   const [load, setLoad] = React.useState(false);
   const [error, setError] = React.useState(false);
   const { data } = useData();
-  console.log(error);
 
   const handleReceiveValue = React.useCallback(
     (event) => {
@@ -18,11 +17,7 @@ export const SearchBar = () => {
       setLoad(true);
       setTimeout(async () => {
         try {
-          const response = await fetch(`https://api.github.com/users/${name}`, {
-            headers: {
-              Authorization: `Bearer ${import.meta.env.VITE_TOKEN}`,
-            },
-          });
+          const response = await fetch(`https://api.github.com/users/${name}`);
           const json = await response.json();
           if (response.status !== 404) {
             setData(json);
